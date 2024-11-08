@@ -15,15 +15,13 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
+html {
+  @apply bg-cover bg-center min-h-screen;
+  background-image: url('/public/images.jpeg');
+}
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-cover bg-center;
+  background-image: url('/public/images.jpeg');
 }
 
 @layer utilities {
